@@ -21,7 +21,7 @@ import whiteBullet from '../assets/peppers/whitebullethabanero.png';
 import habanero from '../assets/peppers/habanero.png';
 
 
-export const PEPPERS = [
+export const INVENTORY = [
     {
         id: 0,
         name: 'Pepper X',
@@ -50,7 +50,7 @@ export const PEPPERS = [
         id: 2,
         name: 'Ghost Pepper',
         img: ghostPepper,
-        featured: true,
+        featured: false,
         Scoville: 1041427,
         seeds: true,
         powder: false,

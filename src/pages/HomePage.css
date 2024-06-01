@@ -1,0 +1,26 @@
+/* body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  } 
+  
+#home-page {
+    background-image: url('../assets/logo/logo.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+  }
+  
+  .home {
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 20%;
+  }
+  button {
+    margin-top: 20px;
+  }  */
