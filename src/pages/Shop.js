@@ -6,8 +6,8 @@ import './Shop.css'
 
 const Shop = () => {
   return (
-    <Container className="shop">
-            <Navigation />
+    <Container fluid className="shop">
+            <Navigation current='/shop' />
             <DisplayList />
     </Container>         
   );

@@ -11,7 +11,7 @@ const HomePage = () => {
 
   return (
     <section id="home-page">
-      <Container className="home">
+      <Container fluid className="home">
         {!showShop ? (
           <>
             <h1>Welcome!</h1>

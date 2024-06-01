@@ -17,16 +17,16 @@
 //   }, []);
 
 import { Card, CardImg, CardText, CardBody, CardTitle } from "reactstrap";
-import './Card.css';
+import "./Card.css";
 
 const DisplayCard = ({ item }) => {
-  const { img, name, description } = item;
+  const { img, name, Scoville } = item;
   return (
-    <Card>
-      <CardImg className='card-img' src={img} alt={name} />
+    <Card className="product-card">
+      <CardImg className="product-img" src={img} alt={name} />
       <CardBody>
         <CardTitle>{name}</CardTitle>
-        <CardText>{description}</CardText>
+        <CardText>{Scoville} scoville units</CardText>
       </CardBody>
     </Card>
   );

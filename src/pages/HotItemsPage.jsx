@@ -1,17 +1,16 @@
 import {Container, Row, Col} from 'reactstrap'
 import DisplayCard from '../components/display/DisplayCard'
-// import { INVENTORY } from '../data/Inventory'
-import { selectItemByMildHeat } from '../components/Inventory/InventorySlice'
 import Navigation from '../components/navbar/Navigation'
+import { selectItemByHotHeat } from '../components/Inventory/InventorySlice'
 
-const MildItemsPage = () => {
-    const mildItems = selectItemByMildHeat();
+const HotItemsPage = () => {
+    const hotItems = selectItemByHotHeat();
     return (
         <>
         <Navigation current='/mild' />
-        <Container fluid className='text-center mild-container'>
+        <Container fluid className='text-center'>
             <Row className='align-items-center'>
-                {mildItems.map((item, idx) => {
+                {hotItems.map((item, idx) => {
                     return (
                         item && (
                             <Col md='3' className="m-1" key={idx}>                                
@@ -24,6 +23,6 @@ const MildItemsPage = () => {
             </Row>
         </Container>
         </>
-    );
-}
-export default MildItemsPage
+    )
+};
+export default HotItemsPage

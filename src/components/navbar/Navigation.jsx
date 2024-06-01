@@ -17,7 +17,7 @@ const Navigation = (args) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div className="mb-3">
+    
       <Navbar dark color="dark" expand="md">
         <NavbarBrand href="/">
           <img 
@@ -58,7 +58,7 @@ const Navigation = (args) => {
           </Nav>
         </Collapse>
       </Navbar>
-    </div>
+   
   );
 };
 

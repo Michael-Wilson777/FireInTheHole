@@ -13,7 +13,13 @@ export const selectFeaturedItem = () => {
 };
 
 export const selectItemByMildHeat = () => {
-  return INVENTORY.filter((item) => {
-    item.Scoville <= 50000 ? item : "There are no mild items in the inventory";
-  });
+  return INVENTORY.filter((item) => item.Scoville <= 50000);
+};
+
+export const selectItemByMediumHeat = () => {
+  return INVENTORY.filter((item) => item.Scoville > 50000 && item.Scoville < 500000);
+};
+
+export const selectItemByHotHeat = () => {
+  return INVENTORY.filter((item) => item.Scoville > 500000 && item.Scoville < 1500000)
 };

@@ -13,7 +13,7 @@ const DisplayList = () => {
                 {items.map((item, idx) => {
                     return (
                         item.featured && (
-                            <Col md className="m-1" key={idx}>
+                            <Col md='6' className="m-1" key={idx}>
                                 <h1 className="text-center">Today's Featured Pepper</h1>
                                 <DisplayCard item={item} />
                             </Col>
